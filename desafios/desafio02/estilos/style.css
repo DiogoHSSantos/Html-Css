@@ -18,7 +18,7 @@ header > h1{
     padding: 10vh;
 }
 section{
-    padding: 40px;
+    padding: 40px 0px;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
@@ -35,15 +35,18 @@ p{
     color: white;
     text-align: justify;
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.377);padding: 20px;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    margin: 40px;
+    text-shadow: 2px 2px 0px black;
 }
 .escritasite{
     background-color: white;
 }
 .escritaimg{
-    width: 300px;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
+    box-shadow: inset 10px 10px 10px 5px rgba(0, 0, 0, 0.336);
 }
 #imagem01{
     background-image: url(../imagens/cachorrinhos02.jpg);
@@ -62,4 +65,11 @@ p{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+}
+footer{
+    background-color: rgb(41, 41, 41);
+    padding: 80px;
+}
+footer > h3{
+    text-align: center;
 }
