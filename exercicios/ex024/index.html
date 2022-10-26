@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minha primeira tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(64, 63, 71);
+        }
+        ul{
+            text-align: center;
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        li{
+            display: inline-block;
+            margin: auto;
+            
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.596);
+        }
+        h1:hover{
+            background-color: rgb(39, 39, 59);
+            color: rgb(216, 181, 153);
+            font-weight: bold;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.699);
+            
+        }
+        thead ,tfoot , .fundoescuro{
+            background-color: gray;
+            color: white;
+            
+        }
+        th, td {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+        td{
+            background-color: white;
+            color: black;
+        }
+        .numer{
+            text-align: right;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <h1>Minha experiência com tabela</h1>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>estado</th>
+                <th>população</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numer">10001000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numer">10002000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janiro</td>
+                <td class="numer">28901977</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numer">290000199</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>população total</th>
+                <td class="numer fundoescuro">00000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
