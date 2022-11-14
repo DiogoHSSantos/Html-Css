@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários 03</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        body{
+            background-image: linear-gradient(to right, #333333, #5e5e5e);
+        }
+        main{
+            background-color: #494a4b;
+            padding: 20px;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 40px #858585 ;
+        }
+        h1{
+            color: #969694;
+            text-align: center;
+        }
+        h1.dentromain{
+            color: #d1d4d4;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            text-align: center;
+        }
+        p.conteudo{
+            color: #d0d3d3;
+            margin:20px ;
+            font-size: 24px;
+        }
+        .botao{
+            color: #eaeff0;
+            background-color: #3d3d3d;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 0px;
+            transition-duration: 0.5s;
+        }
+        .botao:hover{
+            background-color: #3d3d3d;
+            color: #000000;
+            box-shadow: 0px 0px 20px #838383 ;
+        }
+        .preenchimento{
+            background-color: #474747;
+            color:white;
+            border-radius: 10px;
+            padding: 2px;
+            font-size: 24px;
+            transition-duration: 0.5s;
+            border: 0px;
+            box-shadow: 0px 0px 20px #858686;
+        }
+        .preenchimento:hover{
+            background-color: #a0a0a0;
+            border-radius: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício 03 de formulários</h1>
+    </header>
+    <main>
+        <h1 class="dentromain">Preencha os dados a seguir</h1>
+        <form action="../arquivo php/cadastro.php" method="post" autocomplete="on">
+            <p class="conteudo">
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" class="preenchimento" minlength="5" maxlength="20" required placeholder="nome completo">
+            </p>
+            <p class="conteudo">
+                <label for="inum">Média:</label>
+                <input type="number" name="num" id="inum" class="preenchimento" required min="0" max="10" step="0.1" value="10">
+            </p>
+            <p class="conteudo">
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata" class="preenchimento" required >
+            </p>
+            <p class="conteudo">
+                <label for="ihora"> Hora:</label>
+                <input type="time" name="hora" id="ihora" class="preenchimento" required >
+            </p>
+            <p class="conteudo">
+                <input type="submit" value="Salvar" class="botao">
+                <input type="reset" value="limpar" class="botao">
+            </p>
+        </form>
+    </main>
+</body>
+</html>

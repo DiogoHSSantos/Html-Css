@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários 02</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        body{
+            background-image: linear-gradient(to right, #173133, #1c4957);
+        }
+        main{
+            background-color: #294149;
+            padding: 20px;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 40px #496c81 ;
+        }
+        h1{
+            color: #9a9e5e;
+            text-align: center;
+        }
+        h1.dentromain{
+            color: #99c6d8;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            text-align: center;
+        }
+        p.conteudo{
+            color: #7ccfd5;
+            margin:20px ;
+            font-size: 24px;
+        }
+        .botao{
+            color: #baeef5;
+            background-color: #223b3b;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 0px;
+            transition-duration: 0.5s;
+        }
+        .botao:hover{
+            background-color: #243f3b;
+            color: #e5ff00;
+            box-shadow: 0px 0px 20px #497181 ;
+        }
+        .usuariosenha{
+            background-color: #294949;
+            color:white;
+            border-radius: 10px;
+            padding: 2px;
+            font-size: 24px;
+            transition-duration: 0.5s;
+            border: 0px;
+            box-shadow: 0px 0px 20px #497d81;
+        }
+        .usuariosenha:hover{
+            background-color: #5e9a9e;
+            border-radius: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício 02 de formulários</h1>
+    </header>
+    <main>
+        <h1 class="dentromain">Digite seu usuário e sua senha</h1>
+        <form action="../arquivo php/cadastro.php" method="post" autocomplete="on">
+            <p class="conteudo">
+                <label for="iusu">usuário:</label>
+                <input type="text" name="usu" id="iusu" class="usuariosenha" required minlength="5" maxlength="15" size="20" placeholder="digite seu usuário" autocomplete="username">
+            </p>
+            <p class="conteudo">
+               <label for="isen">senha:</label> 
+               <input type="password" name="sen" id="isen" class="usuariosenha" required maxlength="8" size="20"
+               placeholder="digite sua senha" autocomplete="new-password">
+            </p>
+            <p>
+                <input type="submit" value="cadastrar" class="botao">
+                <input type="reset" value="limpar" class="botao">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
