@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários 04</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        body{
+            background-image: linear-gradient(to right, #322949, #3d295e);
+        }
+        main{
+            background-color: #2f1f4e;
+            padding: 20px;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 40px #8b58b8 ;
+        }
+        h1{
+            color: #afaf58;
+            text-align: center;
+        }
+        h1.dentromain{
+            color: #8973ad;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            text-align: center;
+        }
+        p.conteudo{
+            color: #fafafa;
+            margin:20px ;
+            font-size: 24px;
+        }
+        .botao{
+            color: #ab79da;
+            background-color: #523088;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 0px;
+            transition-duration: 0.5s;
+        }
+        .botao:hover{
+            background-color: #2c1541;
+            color: #cad16a;
+            box-shadow: 0px 0px 20px #8c6cc0 ;
+        }
+        .preenchimento{
+            background-color: #2f1f4e ;
+            color:white;
+            border-radius: 10px;
+            padding: 2px;
+            font-size: 24px;
+            transition-duration: 0.5s;
+            border: 0px;
+            box-shadow: 0px 0px 20px #6e45af;
+        }
+        .preenchimento:hover{
+            background-color: #664691;
+            border-radius: 20px;
+            
+        }
+        legend{
+            font-size: 20px;
+            color: white;
+            padding: 0px 10px;
+        }
+        fieldset{
+            border-radius: 20px;
+            border: 2px solid #6200ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício 04 de formulários</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Agenda</legend>
+            <form action="../arquivo php/cadastro.php" method="post" autocomplete="off">
+                <p class="conteudo">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" class="preenchimento" required placeholder="Digite aqui o seu nome">
+                </p>
+                <p class="conteudo">
+                    <label for="itel">telefone:</label>
+                    <input type="tel" name="tel" id="itel" class="preenchimento" pattern="^\d{4,5}-\d{4}$" required maxlength="10" placeholder="xxxxx-xxxx">
+                </p>
+                <p>
+                    <input type="submit" value="enviar" class="botao">
+                    <input type="reset" value="limpar" class="botao">
+                </p>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
