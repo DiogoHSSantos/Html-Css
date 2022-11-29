@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*Estilo para a impressão*/
+
+main{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    display: none;
+}
+footer{
+    display: none;
+}
