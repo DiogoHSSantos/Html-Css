@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*edição de estilos para Mobe First*/
+
+*{
+    font-family: arial;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    height: 100vh;
+}
+body{
+    background: black url(../imagens/back-phone\ -\ Copia.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.6s;
+}
+main{
+    background-color: #ffffffc4;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+main h1{
+    color: white;
+    text-shadow: 3px 3px 0px #000000bb;
+    text-align: center;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+img#phone{display: block;}
+img#tablet{display: none;}
+img#impressora{display: none;}
+img#PC{display: none;}
+img#TV{display: none;}

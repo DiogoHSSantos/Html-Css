@@ -15,4 +15,6 @@ body, html{
 }
 h1{
     color: #fff;
+    font-weight: bolder;
+    text-shadow:  3px 3px 0px #16165e;
 }
