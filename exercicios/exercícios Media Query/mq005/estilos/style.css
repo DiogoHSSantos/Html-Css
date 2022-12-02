@@ -45,6 +45,9 @@ span#burger:hover{
 header menu ul {
     display: none;
 }
+li{
+    list-style-type: none;
+}
 header menu ul:hover li{
     filter: blur(3px);
     transition: 0.6s;
